@@ -77,23 +77,21 @@ const Hero2 = () => {
       };
     } else {
       const offset = (index - activeIndex + cards.length) % cards.length;
-  
       return {
         transform: `translateY(${offset * -30}px) scale(${1 - offset * 0.06})`,
         zIndex: cards.length - offset,
-        opacity: offset > 2 ? 0 : 1, // hide lower cards
+        opacity: offset > 2 ? 0 : 1,
         transition: 'all 0.9s ease-out'
       };
     }
   };
-  
 
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen lg:h-screen flex items-center justify-center text-white font-montserrat overflow-hidden"
+      className="relative w-full min-h-screen flex items-center justify-center text-white font-montserrat overflow-hidden px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-14 py-12"
     >
-      <div className="relative z-20 w-full px-6 lg:px-10 py-12 flex flex-col lg:flex-row items-center justify-between gap-8">
+      <div className="relative z-20 w-full flex flex-col lg:flex-row items-center justify-between gap-8 max-w-[1400px] mx-auto">
         {/* Mobile Cards */}
         <div className="w-full lg:hidden mt-10 flex items-center justify-center">
           <div className="relative h-[330px] w-full max-w-md">
@@ -132,7 +130,7 @@ const Hero2 = () => {
           <p className="text-lg text-gray-200 font-medium mt-5">
             Comprehensive digital solutions for modern business challenges.
           </p>
-          <div className="pointer-events-auto flex flex-col sm:flex-row gap-4 pt-5 justify-center lg:justify-start ">
+          <div className="pointer-events-auto flex flex-col sm:flex-row gap-4 pt-5 justify-center lg:justify-start">
             <button className="relative overflow-hidden rounded-3xl bg-[#c93c3c] text-white px-6 py-3 font-semibold group transition-transform duration-300 hover:scale-105 shadow-lg">
               <span className="absolute inset-0 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 z-0"></span>
               <span className="relative text-white group-hover:text-[#c93c3c] transition-colors duration-200 z-10">
