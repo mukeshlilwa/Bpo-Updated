@@ -2,7 +2,8 @@
 import Image from "next/image";
 import React from "react";
 
-export default function AdministrativeSupport() {
+export default function AdministrativeSupport() 
+{
   // Color scheme
   const colors = {
     primary: "#C93C3C",
