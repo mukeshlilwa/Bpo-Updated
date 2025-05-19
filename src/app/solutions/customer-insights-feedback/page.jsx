@@ -3,7 +3,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import SolutionsButton from "@/app/components/solutions-menu-button/button";
 
 export default function CustomerInsghts() {
   return (
