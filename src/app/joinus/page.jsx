@@ -1,13 +1,14 @@
 "use client";
 
 import React from "react";
-import GlobalBackground from "../components/GlobalBackground/background";
+
 import WhyJoinUs from "../JoinUsComponents/WhyJoinUs";
 import CompanyCulture from "../JoinUsComponents/CompanyCulture";
 import OpenPositions from "../JoinUsComponents/OpenPositions";
 import LifeAtCompany from "../JoinUsComponents/LifeAtCompany";
-import ApplicationForm from "../JoinUsComponents/ApplicationForm";
 import JoinUsFinalCTA from "../JoinUsComponents/JoinUsFinalCTA";
+import { Contact2Icon } from "lucide-react";
+import ContactForm from "../components/contact-form/contactform";
 
 const JoinUs = () => {
   // Color scheme
@@ -58,8 +59,10 @@ const JoinUs = () => {
       <CompanyCulture />
       <OpenPositions />
       <LifeAtCompany />
-      <ApplicationForm />
+      <ContactForm/>
       <JoinUsFinalCTA />
+      
+      
     </>
   );
 };

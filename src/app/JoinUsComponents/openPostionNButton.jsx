@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 export default function ServicesButton() {
   return (
@@ -12,10 +12,6 @@ export default function ServicesButton() {
         <div className="h-[3px] w-full bg-white rounded-full" />
       </div>
 
-      {/* tagline */}
-      <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-medium my-6 max-w-3xl mx-auto">
-        Browse all our&nbsp;services to find the perfect fit for your&nbsp;business.
-      </p>
 
       {/* button */}
       <Link
@@ -24,7 +20,7 @@ export default function ServicesButton() {
                    text-white font-medium py-2 px-6 sm:py-3 sm:px-8 md:py-4 md:px-10
                    rounded-lg"
       >
-        View&nbsp;All&nbsp;Services
+        Vi
       </Link>
     </>
   );

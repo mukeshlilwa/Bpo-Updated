@@ -81,25 +81,31 @@ const iconList = ['Briefcase', 'Cpu', 'MessagesSquare', 'Database', 'Contact', '
 
 export default function SolutionsPage() {
   return (
-    <div >
-      {/* Hero Section with Gradient Background */}
-      <section className="relative">
-        <div 
-          className="py-20 px-4 sm:px-6 lg:px-8"
-          style={{ 
-            background: `linear-gradient(135deg, ${colors.secondary} 0%, ${colors.primary} 100%)`
-          }}
-        >
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white pt-0 lg:pt-5">
-              Solutions<span style={{ color: colors.accent }}>.</span>
-            </h1>
-            <p className="mt-4 text-lg text-gray-100">
-              Explore Our Comprehensive Solutions
-            </p>
-          </div>
+    <div>
+      {/* 🖼️ Top Hero Section with Background Image - Matches Services page */}
+      <div
+        className="relative py-24 px-4 sm:px-6 lg:px-8 mx-auto text-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1470&q=80')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black opacity-70 pointer-events-none"></div>
+
+        {/* Text content - Matches Services page style */}
+        <div className="relative">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#c93c3c]">
+            Solutions<span className='text-white'>.</span>
+          </h1>
+          <p className="mt-4 text-lg md:text-xl mx-auto max-w-2xl">
+            Transform your business with our cutting-edge technology solutions and automation services
+          </p>
         </div>
-      </section>
+      </div>
 
       {/* Solutions Cards Section */}
       <div className="container mx-auto px-6 md:px-10 lg:px-10 py-16">
@@ -135,10 +141,6 @@ export default function SolutionsPage() {
                     {/* Category Title with padding to align with icon */}
                     <h2 
                       className="text-xl font-bold mb-6 mt-4"
-                      style={{ 
-                       
-                        paddingLeft: '20px' // Matches icon positioning
-                      }}
                     >
                       {category}
                     </h2>
@@ -150,7 +152,6 @@ export default function SolutionsPage() {
                           <Link
                             href={`/solutions/${path}/${i}`}
                             className="flex items-center gap-2 font-medium hover:underline"
-                            
                           >
                             <Icons.ArrowRight
                               size={16} className='text-[#9C3C3C]'
