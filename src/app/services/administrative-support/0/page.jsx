@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import ServicesButton from "@/app/components/services-meu-button/button";
 import React from "react";
 
 export default function DigitalMarketing() {
@@ -126,17 +125,7 @@ export default function DigitalMarketing() {
         ))}
       </ul>
 
-      {/* CTA STRIP */}
-      <div
-        className="
-          mt-14 sm:mt-16
-          bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] rounded-xl
-          p-6 sm:p-8 lg:p-10
-          shadow-lg text-center mb-20
-        "
-      >
-        <ServicesButton />
-      </div>
+      
     </section>
   );
 }

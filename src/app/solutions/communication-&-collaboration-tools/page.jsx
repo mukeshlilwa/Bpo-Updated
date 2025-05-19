@@ -113,16 +113,7 @@ export default function CommunicationAndCollaboration() {
       </ul>
 
       {/* CTA STRIP */}
-      <div
-        className="
-          mt-14 sm:mt-16
-          bg-[#134386] rounded-xl
-          p-6 sm:p-8 lg:p-10
-          shadow-lg text-center mb-15
-        "
-      >
-        <SolutionsButton />
-      </div>
+     
     </section>
   );
 }
