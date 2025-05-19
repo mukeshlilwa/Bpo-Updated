@@ -1,6 +1,6 @@
 import React from 'react'
 
-const button = () => {
+const Button = () => {
   return (
     <>
     <button>
@@ -11,4 +11,4 @@ const button = () => {
   )
 }
 
-export default button
+export default Button
