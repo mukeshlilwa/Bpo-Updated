@@ -7,7 +7,6 @@ import CompanyCulture from "../JoinUsComponents/CompanyCulture";
 import OpenPositions from "../JoinUsComponents/OpenPositions";
 import LifeAtCompany from "../JoinUsComponents/LifeAtCompany";
 import JoinUsFinalCTA from "../JoinUsComponents/JoinUsFinalCTA";
-import { Contact2Icon } from "lucide-react";
 import ContactForm from "../components/contact-form/contactform";
 
 const JoinUs = () => {
@@ -45,10 +44,10 @@ const JoinUs = () => {
             We’re not just offering jobs – we’re building careers with purpose.
           </p>
           <div className="mt-6 flex justify-center gap-4">
-            <button className="bg-[#c93c3c] px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+            <button className="bg-[#c93c3c] px-6 py-3 rounded-lg font-medium hover:bg:[#9c3c3c] transition cursor-pointer">
               View Open Positions
             </button>
-            <button className="border border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-black transition">
+            <button className="border border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-black transition cursor-pointer">
               Apply Now
             </button>
           </div>
