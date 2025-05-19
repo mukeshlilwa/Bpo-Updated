@@ -11,6 +11,7 @@ export default function InboundandOutbound() {
     lightBg: "#F5F7FA",
     darkText: "#333333",
     lightText: "#FFFFFF",
+    white: '#fff3ff'
   };
 
   return (
